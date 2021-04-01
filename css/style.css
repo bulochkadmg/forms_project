@@ -1,4 +1,6 @@
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -131,4 +133,76 @@ p, h1, h2, h3, h4, h5, h6 {
   margin: 30px 0;
   text-align: center;
   opacity: 0.7;
+}
+
+.tabs-with-forms {
+  padding: 130px 100px;
+  flex-grow: 1;
+}
+
+.project-types-part {
+  width: 100%;
+  max-width: 305px;
+}
+
+.project-type-checkbox input {
+  display: none;
+}
+
+.project-type-checkbox > label {
+  padding: 15px 25px;
+  border-radius: 5px;
+  border: 1px solid #f5f5f5;
+  background-color: #f5f5f5;
+  display: block;
+  cursor: pointer;
+}
+
+.project-type-checkbox > label:hover {
+  border-color: #00ac6a;
+  background-color: #fff;
+}
+
+.project-type-checkbox > input:checked + label {
+  background-color: #00ac6a;
+  border-color: #00ac6a;
+}
+
+.project-type-checkbox .project-type-title {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.project-team-type-radio-group {
+  margin-top: 45px;
+}
+
+.project-team-type-radio > label {
+  color: #c7c8c8;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.project-team-type-radio > label::before {
+  content: '';
+  width: 16px;
+  height: 16px;
+  border: 2px solid #b3e6d3;
+  background-color: transparent;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.project-team-type-radio input:checked + label::before {
+  background-color: #fff;
+  padding: 2px;
+  background-clip: content-box;
+}
+
+.project-type-checkbox > input:checked + label .project-team-type-radio label {
+  color: #fff;
+}
+
+.project-type-checkbox > input:checked + label .project-team-type-radio label::before {
+  border-color: #fff;
 }
