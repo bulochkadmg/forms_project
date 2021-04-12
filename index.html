@@ -134,7 +134,7 @@
     $( "#tabs" ).tabs();
 
     $('[data-label-animated]').on('blur', function(event) {
-      if(event.target) {
+      if(event.target.value) {
         $(event.target).addClass('value-exist');
       } else {
         $(event.target).removeClass('value-exist');
