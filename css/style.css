@@ -206,3 +206,49 @@ p, h1, h2, h3, h4, h5, h6 {
 .project-type-checkbox > input:checked + label .project-team-type-radio label::before {
   border-color: #fff;
 }
+
+.main-form-part {
+  max-width: 740px;
+  margin-left: 85px;
+  width: 100%;
+}
+
+.input-item {
+  position: relative;
+  max-width: 500px;
+}
+
+.input-item .form-control {
+  width: 100%;
+  border-bottom: 1px solid #d3d3d4;
+  padding-bottom: 20px;
+  padding-left: 25px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  line-height: 1;
+  font-weight: 500;
+}
+
+.input-item label {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  line-height: 1;
+  font-weight: 500;
+  position: absolute;
+  width: 100%;
+  top: 3px;
+  left: 25px;
+  transition: all 0.2s ease-in;
+}
+
+.input-item .form-control:focus ~ label,
+.input-item .form-control.value-exist ~ label {
+  top: -20px;
+  font-size: 12px;
+  font-weight: 300;
+  color: #727275;
+}
+
+.main-form-part .input-item + .input-item {
+  margin-top: 100px;
+}
